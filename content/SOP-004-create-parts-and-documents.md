@@ -39,7 +39,9 @@ Both are versioned and managed through the same lifecycle framework, but created
 
 **Prerequisites:** Part Creator role permissions in CorePLM.
 
-> Note: Search the repository before creating. If the part exists under a different number or name, contact the part owner rather than creating a duplicate.
+{% callout %}
+Search the repository before creating. If the part exists under a different number or name, contact the part owner rather than creating a duplicate.
+{% /callout %}
 
 **Steps:**
 
@@ -67,7 +69,9 @@ If this part is being created as part of a controlled change, add it to the CN A
 
 **Prerequisites:** Document Creator role permissions in CorePLM.
 
-> Note: Search the repository before creating. If a document exists, contact its owner.
+{% callout %}
+Search the repository before creating. If a document exists, contact its owner.
+{% /callout %}
 
 **Steps:**
 

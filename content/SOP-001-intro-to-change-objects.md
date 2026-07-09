@@ -29,7 +29,9 @@ All Meridian Medical employees who initiate, contribute to, or approve controlle
 
 A CR initiates the change process. It captures the reason for a proposed change, the scope of affected items, and the requestor. A CR does not authorize a change — it opens a review that determines whether a CN should be created.
 
-> Note: Not all CRs result in a CN. A CR may be closed as "No Action Required" or merged with an existing CN.
+{% callout %}
+Not all CRs result in a CN. A CR may be closed as "No Action Required" or merged with an existing CN.
+{% /callout %}
 
 ---
 

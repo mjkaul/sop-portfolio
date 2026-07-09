@@ -68,7 +68,9 @@ For access issues, see [SOP-007: Troubleshooting](./SOP-007-troubleshooting.md).
 
 4. Select **Add File**, attach the released PDF downloaded in Step 1, and select **Upload**.
 
-> Note: eManuals requires PDF format. Do not attach source files.
+{% callout %}
+eManuals requires PDF format. Do not attach source files.
+{% /callout %}
 
 ---
 

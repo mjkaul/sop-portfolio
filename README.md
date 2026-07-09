@@ -35,7 +35,7 @@ A process appears in exactly one place. Other documents link to it. Duplicating 
 Language is precise and unambiguous for both native and non-native speakers. Sentences are short. Active voice is preferred. Idioms and unnecessarily complex constructions are avoided.
 
 **5. Happy Path priority.**  
-Each SOP documents the standard workflow clearly. Exceptions, errors, and edge cases are addressed in [SOP-007: Troubleshooting](./SOP-007-troubleshooting.md) rather than interrupting the main procedure.
+Each SOP documents the standard workflow clearly. Exceptions, errors, and edge cases are addressed in [SOP-007: Troubleshooting](./content/SOP-007-troubleshooting.md) rather than interrupting the main procedure.
 
 ---
 
@@ -43,13 +43,13 @@ Each SOP documents the standard workflow clearly. Exceptions, errors, and edge c
 
 | SOP ID | Title | Description |
 |--------|-------|-------------|
-| [SOP-001](./SOP-001-intro-to-change-objects.md) | Introduction to Change Objects in CorePLM | The three change object types — CR, CN, CT — and how they relate |
-| [SOP-002](./SOP-002-legacyvault-vs-coreplm-changes.md) | LegacyVault vs. CorePLM: Change Notices Compared | Side-by-side comparison of change notice workflows for users transitioning from LegacyVault |
-| [SOP-003](./SOP-003-create-release-change-notice.md) | How to Create and Release a Change Notice | End-to-end procedure for creating, routing, and releasing a CN in CorePLM |
-| [SOP-004](./SOP-004-create-parts-and-documents.md) | How to Create Parts and Documents in CorePLM | Creating controlled parts and documents in the CorePLM repository |
-| [SOP-005](./SOP-005-release-to-emanuals.md) | Releasing Electronic Materials to eManuals | Publishing approved content from CorePLM to the eManuals distribution system |
-| [SOP-006](./SOP-006-additional-learning-resources.md) | Additional Learning Resources for CorePLM | Training courses, reference materials, and support contacts |
-| [SOP-007](./SOP-007-troubleshooting.md) | Troubleshooting | Common errors, access issues, and edge cases across all CorePLM workflows |
+| [SOP-001](./content/SOP-001-intro-to-change-objects.md) | Introduction to Change Objects in CorePLM | The three change object types — CR, CN, CT — and how they relate |
+| [SOP-002](./content/SOP-002-legacyvault-vs-coreplm-changes.md) | LegacyVault vs. CorePLM: Change Notices Compared | Side-by-side comparison of change notice workflows for users transitioning from LegacyVault |
+| [SOP-003](./content/SOP-003-create-release-change-notice.md) | How to Create and Release a Change Notice | End-to-end procedure for creating, routing, and releasing a CN in CorePLM |
+| [SOP-004](./content/SOP-004-create-parts-and-documents.md) | How to Create Parts and Documents in CorePLM | Creating controlled parts and documents in the CorePLM repository |
+| [SOP-005](./content/SOP-005-release-to-emanuals.md) | Releasing Electronic Materials to eManuals | Publishing approved content from CorePLM to the eManuals distribution system |
+| [SOP-006](./content/SOP-006-additional-learning-resources.md) | Additional Learning Resources for CorePLM | Training courses, reference materials, and support contacts |
+| [SOP-007](./content/SOP-007-troubleshooting.md) | Troubleshooting | Common errors, access issues, and edge cases across all CorePLM workflows |
 
 ---
 
@@ -60,6 +60,26 @@ Each SOP documents the standard workflow clearly. Exceptions, errors, and edge c
 | **Bold text** | UI element, field name, or button label |
 | `Monospace text` | System-generated value or exact string to enter |
 | > Note: | Supplementary information |
+
+---
+
+## Rendered Site
+
+The SOPs above are plain Markdown and render natively on GitHub. They're also written to work with [Markdoc](https://markdoc.dev/), Stripe's Markdown authoring framework, via a small Next.js app in [`site/`](./site) — this gives a navigable, styled rendering of the same source files, including the `> Note:` callouts as styled components. Content lives in [`content/`](./content) and is shared by both the raw GitHub view and the rendered site — nothing is duplicated.
+
+**Prerequisites:** Node.js 18.17 or later and npm.
+
+**Install and run:**
+
+```
+cd site
+npm install
+npm run dev
+```
+
+Then open `http://localhost:3000`. Stop the server with `Ctrl+C`.
+
+To verify a production build instead of the dev server, run `npm run build && npm start` from `site/`.
 
 ---
 
